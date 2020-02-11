@@ -417,7 +417,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 0a000000
   set: 10
-  name: "Wodoci\u0105gi"
+  propertyName: "Wodoci\u0105gi"
 --- !u!1 &169961362
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169961362}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -455,8 +455,8 @@ Transform:
   - {fileID: 1706828356}
   - {fileID: 1793278798}
   - {fileID: 1040607957}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1042249933}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306897195
 GameObject:
@@ -571,7 +571,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 2d000000dc00000094020000400600009e070000fc080000
   set: 6
-  name: Obserwatorium Astronomiczne
+  propertyName: Obserwatorium Astronomiczne
 --- !u!1 &357094699
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,13 +595,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357094699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2070706862}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1042249933}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357305475
 GameObject:
@@ -716,7 +716,149 @@ MonoBehaviour:
   hotelCost: 200
   fees: 190000007800000068010000e80300007805000008070000
   set: 3
-  name: "Rynek Podg\xF3rski"
+  propertyName: "Rynek Podg\xF3rski"
+--- !u!1 &368058753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 368058757}
+  - component: {fileID: 368058756}
+  - component: {fileID: 368058755}
+  - component: {fileID: 368058754}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &368058754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368058753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &368058755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368058753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &368058756
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368058753}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &368058757
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368058753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1711510441}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &371558976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371558978}
+  - component: {fileID: 371558977}
+  m_Layer: 0
+  m_Name: DiceController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &371558977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371558976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6096453ba41010544805a1951c00fba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &371558978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371558976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496249744
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +972,52 @@ MonoBehaviour:
   hotelCost: 400
   fees: 460000005e010000e803000098080000280a0000b80b0000
   set: 8
-  name: "Rynek G\u0142\xF3wny"
+  propertyName: "Rynek G\u0142\xF3wny"
+--- !u!1 &510528710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510528711}
+  - component: {fileID: 510528712}
+  m_Layer: 0
+  m_Name: Pawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510528711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510528710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &510528712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510528710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a70489ddd18a0274fb48f49284b2ab01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawnPrefab: {fileID: 7209400541651974429, guid: 69a5c78fbbfb6cc4599ad333d1d0d4cb,
+    type: 3}
 --- !u!1 &519192215
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +1131,7 @@ MonoBehaviour:
   hotelCost: 200
   fees: 1e0000008c000000900100004c040000dc0500006c070000
   set: 4
-  name: "Park Lotnik\xF3w"
+  propertyName: "Park Lotnik\xF3w"
 --- !u!1 &546743742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1245,7 @@ MonoBehaviour:
   hotelCost: 100
   fees: 0a0000002800000078000000680100008002000084030000
   set: 1
-  name: "Dw\xF3r Jerzmanowskiego"
+  propertyName: "Pa\u0142ac Jerzmanowskiego"
 --- !u!1 &670156052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,7 +1359,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 2d000000dc00000094020000400600009e070000fc080000
   set: 6
-  name: ZOO
+  propertyName: ZOO
 --- !u!1 &685536536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,7 +1473,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 23000000b4000000f401000078050000d606000034080000
   set: 5
-  name: Biprostal
+  propertyName: Biprostal
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,7 +1678,7 @@ MonoBehaviour:
   hotelCost: 400
   fees: 6400000090010000b0040000f00a0000480d0000a00f0000
   set: 8
-  name: Wawel
+  propertyName: Wawel
 --- !u!1 &794148358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1792,7 @@ MonoBehaviour:
   hotelCost: 100
   fees: 0a0000002800000078000000680100008002000084030000
   set: 1
-  name: Szpital Uniwersytecki
+  propertyName: Szpital Uniwersytecki
 --- !u!1 &890720891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1906,7 @@ MonoBehaviour:
   hotelCost: 200
   fees: 23000000a0000000b8010000b004000040060000d0070000
   set: 4
-  name: "Tauron Arena Krak\xF3w"
+  propertyName: "Tauron Arena Krak\xF3w"
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,7 +1917,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1738,14 +1924,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -2008,7 +2186,7 @@ MonoBehaviour:
   hotelCost: 400
   fees: 37000000040100000c0300006c07000098080000f6090000
   set: 7
-  name: Zajezdnia Tramwajowa
+  propertyName: Zajezdnia Tramwajowa
 --- !u!1 &1031909434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,7 +2210,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031909434}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2046,8 +2224,8 @@ Transform:
   - {fileID: 1302687714}
   - {fileID: 546743746}
   - {fileID: 1697726617}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1042249933}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037259030
 GameObject:
@@ -2254,7 +2432,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 3200000064000000c800000090010000
   set: 9
-  name: "Krak\xF3w P\u0142asz\xF3w"
+  propertyName: "Krak\xF3w P\u0142asz\xF3w"
 --- !u!1 &1040607953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,6 +2524,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 169961363}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1042249932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1042249933}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1042249933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042249932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1299968817}
+  - {fileID: 169961363}
+  - {fileID: 1421650408}
+  - {fileID: 1031909435}
+  - {fileID: 357094700}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093777108
 GameObject:
@@ -2460,7 +2673,7 @@ MonoBehaviour:
   hotelCost: 200
   fees: 1e0000008c000000900100004c040000dc0500006c070000
   set: 4
-  name: Akademia Wychowania Fizycznego
+  propertyName: Akademia Wychowania Fizycznego
 --- !u!1 &1121030982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,7 +2787,7 @@ MonoBehaviour:
   hotelCost: 400
   fees: 37000000040100000c0300006c07000098080000f6090000
   set: 7
-  name: "Uniwersytet Jagiello\u0144ski"
+  propertyName: "Uniwersytet Jagiello\u0144ski"
 --- !u!1 &1217927805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2901,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 28000000c800000058020000dc0500003a07000098080000
   set: 5
-  name: "Akademia G\xF3rniczo-Hutnicza"
+  propertyName: "Akademia G\xF3rniczo-Hutnicza"
 --- !u!1 &1299968816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,7 +2925,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299968816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2726,8 +2939,8 @@ Transform:
   - {fileID: 1121030986}
   - {fileID: 1030254398}
   - {fileID: 1332613335}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1042249933}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302687710
 GameObject:
@@ -2936,7 +3149,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421650407}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2950,8 +3163,8 @@ Transform:
   - {fileID: 1975337651}
   - {fileID: 1446535523}
   - {fileID: 129592853}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1042249933}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446535519
 GameObject:
@@ -3066,7 +3279,7 @@ MonoBehaviour:
   hotelCost: 200
   fees: 14000000640000002c01000084030000b0040000dc050000
   set: 3
-  name: Fabryka Schindlera
+  propertyName: Fabryka Schindlera
 --- !u!1 &1450700094
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3485,7 @@ MonoBehaviour:
   hotelCost: 100
   fees: 1400000050000000c80000005802000084030000b0040000
   set: 2
-  name: Huta ArcelorMittal
+  propertyName: Huta ArcelorMittal
 --- !u!1 &1542498873
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3691,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 3200000064000000c800000090010000
   set: 9
-  name: "Krak\xF3w G\u0142\xF3wny"
+  propertyName: "Krak\xF3w G\u0142\xF3wny"
 --- !u!1 &1568622447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,7 +3897,7 @@ MonoBehaviour:
   hotelCost: 400
   fees: 3c0000002c01000084030000d007000060090000f00a0000
   set: 7
-  name: Centrum Kongresowe ICE
+  propertyName: Centrum Kongresowe ICE
 --- !u!1 &1638050698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3798,7 +4011,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 3200000064000000c800000090010000
   set: 9
-  name: "Krak\xF3w Bie\u017Can\xF3w"
+  propertyName: "Krak\xF3w Bie\u017Can\xF3w"
 --- !u!1 &1669307930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,7 +4125,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 32000000f0000000d0020000a40600000208000060090000
   set: 6
-  name: Willa Decjusza
+  propertyName: Willa Decjusza
 --- !u!1 &1697726613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4097,6 +4310,136 @@ Transform:
   m_Father: {fileID: 169961363}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
+--- !u!1 &1711510440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711510441}
+  - component: {fileID: 1711510444}
+  - component: {fileID: 1711510443}
+  - component: {fileID: 1711510442}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1711510441
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711510440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1937534201}
+  - {fileID: 2078688654}
+  m_Father: {fileID: 368058757}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 205, y: 100}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &1711510442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711510440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1711510443}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 371558977}
+        m_MethodName: DiceRoll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1711510443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711510440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1711510444
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711510440}
+  m_CullTransparentMesh: 0
 --- !u!1 &1793278794
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,7 +4553,7 @@ MonoBehaviour:
   hotelCost: 300
   fees: 23000000b4000000f401000078050000d606000034080000
   set: 5
-  name: Uniwersytet Pedagogiczny
+  propertyName: Uniwersytet Pedagogiczny
 --- !u!1 &1842617172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,7 +4667,7 @@ MonoBehaviour:
   hotelCost: 100
   fees: 0f0000003c000000b40000001c020000200300004c040000
   set: 2
-  name: Teatr Ludowy
+  propertyName: Teatr Ludowy
 --- !u!1 &1886058553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,7 +4781,73 @@ MonoBehaviour:
   hotelCost: 200
   fees: 14000000640000002c01000084030000b0040000dc050000
   set: 3
-  name: Akademia Frycza Modrzewskiego
+  propertyName: Akademia Frycza Modrzewskiego
+--- !u!1 &1901895420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901895423}
+  - component: {fileID: 1901895422}
+  - component: {fileID: 1901895421}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901895421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901895420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1901895422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901895420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1901895423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901895420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1931238782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4552,7 +4961,80 @@ MonoBehaviour:
   hotelCost: 100
   fees: 0f0000003c000000b40000001c020000200300004c040000
   set: 2
-  name: Plac Centralny
+  propertyName: Plac Centralny
+--- !u!1 &1937534200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937534201}
+  - component: {fileID: 1937534203}
+  - component: {fileID: 1937534202}
+  m_Layer: 5
+  m_Name: DiceOne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1937534201
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937534200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1711510441}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1937534202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937534200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: eda36414b83dce24cbf949f23460076b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1937534203
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937534200}
+  m_CullTransparentMesh: 0
 --- !u!1 &1975337647
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,7 +5148,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 0a000000
   set: 10
-  name: "Elektrociep\u0142ownia"
+  propertyName: "Elektrociep\u0142ownia"
 --- !u!1 &2007269063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4780,7 +5262,7 @@ MonoBehaviour:
   hotelCost: 0
   fees: 3200000064000000c800000090010000
   set: 9
-  name: "Krak\xF3w Olsza"
+  propertyName: "Krak\xF3w Olsza"
 --- !u!1 &2070706861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,3 +5355,76 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070706861}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2078688653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078688654}
+  - component: {fileID: 2078688656}
+  - component: {fileID: 2078688655}
+  m_Layer: 5
+  m_Name: DiceTwo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2078688654
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078688653}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1711510441}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &2078688655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078688653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: eda36414b83dce24cbf949f23460076b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2078688656
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078688653}
+  m_CullTransparentMesh: 0

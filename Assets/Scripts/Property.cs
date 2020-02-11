@@ -24,7 +24,7 @@ public class Property : MonoBehaviour
     int set;
 
     [SerializeField]
-    string name;
+    string propertyName;
 
     int owner;
 
