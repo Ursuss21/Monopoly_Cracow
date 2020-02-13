@@ -13,6 +13,8 @@ public class PawnController : MonoBehaviour
     private int currentPlayer;
     private bool diceDoubleFlag = false;
 
+    //Create singleton
+
     public static PawnController instance { get; set; }
 
     private void Awake() {
@@ -24,9 +26,14 @@ public class PawnController : MonoBehaviour
         }
     }
 
+    //Initialize variables
+
     private void Start(){
         pawns = new GameObject[pawnCount];
         playerOrder = new int[pawnCount];
+
+        //Set pawns position on board
+
         float x = 0;
         float y = 0;
         for(int i = 0; i < pawnCount; ++i){
@@ -54,6 +61,8 @@ public class PawnController : MonoBehaviour
             playerOrder[i] = i;
         }
         currentPlayer = playerOrder[0];
+
+        UIController.instance.DisablePropertyPanel();
     }
 
     private void Update()
@@ -86,6 +95,8 @@ public class PawnController : MonoBehaviour
         Player player = pawns[currentPlayer].GetComponent<Player>();
         int currentField = player.GetCurrentField();
 
+        //Check if player rolled double after double, if yes send him to prison
+
         if(diceDouble && diceDoubleFlag){
             if(currentField <= 11){
                 value = 11 - currentField;
@@ -99,6 +110,18 @@ public class PawnController : MonoBehaviour
         else if(!diceDouble && diceDoubleFlag){
             diceDoubleFlag = false;
         }
+
+        //Check if player went into 31 field (go to jail), if not check if he went through the start and pay him money
+
+        if(currentField + value == 31){
+            value += 20;
+            player.SetImprisoned(true);
+        }
+        else if(!diceDouble && !diceDoubleFlag && currentField + value > 40){
+            pawns[currentPlayer].GetComponent<Player>().UpdateMoney(400);
+        }
+
+        //Move player around the board
 
         for(int i = currentField; i < currentField + value; ++i){
             if(i%40 > 0 && i%40 < 11){
@@ -117,6 +140,10 @@ public class PawnController : MonoBehaviour
         }
         player.ChangeCurrentField(value);
 
+        PropertyController.instance.ManageProperties(player);
+
+        //Check if double has been rolled, if yes do not change player
+
         if(!diceDouble && !diceDoubleFlag){
             ChangePlayer();
         }
@@ -124,7 +151,9 @@ public class PawnController : MonoBehaviour
             diceDoubleFlag = true;
         }
 
-        Debug.Log("player field: "+ currentField);
+        //Update UI
+
+        UIController.instance.UpdateAccountStates(pawns);
     }
 
     private void ChangePlayer(){

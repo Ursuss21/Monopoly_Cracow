@@ -5,30 +5,36 @@ using UnityEngine;
 public class Property : MonoBehaviour
 {
     [SerializeField]
-    int cost;
+    private int cost;
     [SerializeField]
-    int mortgageCost;
+    private int mortgageCost;
     [SerializeField]
-    bool isRail;
+    private bool isRail;
     [SerializeField]
-    bool isSupplies;
+    private bool isSupplies;
 
     [SerializeField]
-    int homeCost;
+    private int homeCost;
     [SerializeField]
-    int hotelCost;
+    private int hotelCost;
 
     [SerializeField]
-    int[] fees = new int[6];
+    private int[] fees = new int[6];
     [SerializeField]
-    int set;
+    private int set;
 
     [SerializeField]
-    string propertyName;
+    private string propertyName;
 
     int owner;
+    int buildings;
 
     private void Start() {
-        
+        owner = -1;
+        buildings = 0;
+    }
+
+    public int GetOwner(){
+        return owner;
     }
 }

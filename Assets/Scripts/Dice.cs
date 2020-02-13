@@ -21,7 +21,7 @@ public class Dice : MonoBehaviour
         diceFaces = Resources.LoadAll<Sprite>(diceSpritesFolder);
     }
 
-    void DiceRoll(){
+    public void DiceRoll(){
         bool diceDouble = false;
         diceOneValue = Mathf.Floor(Random.Range(1f, 6.999999f));
         diceTwoValue = Mathf.Floor(Random.Range(1f, 6.999999f));
@@ -36,11 +36,11 @@ public class Dice : MonoBehaviour
         PawnController.instance.MovePawn((int)(diceOneValue + diceTwoValue), diceDouble);
     }
 
-    float GetDiceOneValue(){
+    public float GetDiceOneValue(){
         return diceOneValue;
     }
 
-    float GetDiceTwoValue(){
+    public float GetDiceTwoValue(){
         return diceTwoValue;
     }
 }
