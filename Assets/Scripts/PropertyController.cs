@@ -17,9 +17,10 @@ public class PropertyController : MonoBehaviour
 
     public void ManageProperties(Player player){
         int propertyNumber = player.GetCurrentField();
-        if(GameObject.Find(""+propertyNumber).GetComponent<Property>() != null){
-            if(GameObject.Find(""+propertyNumber).GetComponent<Property>().GetOwner() == -1){
-                UIController.instance.EnablePropertyPanel();
+        Property property = GameObject.Find(""+propertyNumber).GetComponent<Property>();
+        if(property != null){
+            if(property.GetOwner() == -1){
+                UI.instance.EnablePropertyPanel();
             }
         }
     }

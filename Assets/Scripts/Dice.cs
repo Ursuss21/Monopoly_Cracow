@@ -5,35 +5,37 @@ using UnityEngine.UI;
 
 public class Dice : MonoBehaviour
 {
-    private float diceOneValue;
-    private float diceTwoValue;
-
-    private string diceSpritesFolder = "Sprites/Dice";
+    private int diceOneValue;
+    private int diceTwoValue;
 
     private GameObject diceOneObject;
     private GameObject diceTwoObject;
 
-    private Sprite[] diceFaces;
+    bool diceDouble;
 
     private void Start() {
         diceOneObject = GameObject.Find("DiceOne");
         diceTwoObject = GameObject.Find("DiceTwo");
-        diceFaces = Resources.LoadAll<Sprite>(diceSpritesFolder);
+        diceDouble = false;
+    }
+
+    private int GetDiceRollValue(){
+        return (int) Mathf.Floor(Random.Range(1f, 6.999999f));
     }
 
     public void DiceRoll(){
-        bool diceDouble = false;
-        diceOneValue = Mathf.Floor(Random.Range(1f, 6.999999f));
-        diceTwoValue = Mathf.Floor(Random.Range(1f, 6.999999f));
+        SetDiceDouble(false);
+        diceOneValue = GetDiceRollValue();
+        diceTwoValue = GetDiceRollValue();
 
-        diceOneObject.GetComponent<Image>().sprite = diceFaces[(int) diceOneValue - 1];
-        diceTwoObject.GetComponent<Image>().sprite = diceFaces[(int) diceTwoValue - 1];
+        UI.instance.UpdateDiceSprite(diceOneObject, diceOneValue - 1);
+        UI.instance.UpdateDiceSprite(diceTwoObject, diceTwoValue - 1);
 
         if(diceOneValue == diceTwoValue){
-            diceDouble = true;
+            SetDiceDouble(true);
         }
 
-        PawnController.instance.MovePawn((int)(diceOneValue + diceTwoValue), diceDouble);
+        Pawn.instance.MovePawn(diceOneValue + diceTwoValue, diceDouble);
     }
 
     public float GetDiceOneValue(){
@@ -42,5 +44,13 @@ public class Dice : MonoBehaviour
 
     public float GetDiceTwoValue(){
         return diceTwoValue;
+    }
+
+    private bool GetDiceDouble(){
+        return diceDouble;
+    }
+
+    private void SetDiceDouble(bool value){
+        diceDouble = value;
     }
 }
