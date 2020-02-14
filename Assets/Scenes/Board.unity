@@ -205,6 +205,7 @@ GameObject:
   - component: {fileID: 61054326}
   - component: {fileID: 61054325}
   - component: {fileID: 61054324}
+  - component: {fileID: 61054328}
   m_Layer: 0
   m_Name: 5
   m_TagString: Untagged
@@ -285,6 +286,31 @@ Transform:
   m_Father: {fileID: 1031909435}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &61054328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61054323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &129592849
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +323,7 @@ GameObject:
   - component: {fileID: 129592852}
   - component: {fileID: 129592851}
   - component: {fileID: 129592850}
+  - component: {fileID: 129592854}
   m_Layer: 0
   m_Name: 11
   m_TagString: Untagged
@@ -377,6 +404,31 @@ Transform:
   m_Father: {fileID: 1421650408}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &129592854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129592849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &134160958
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,18 +531,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 134160958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 300
-  mortgageCost: 150
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
-  isSupplies: 1
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 0a000000
-  set: 10
-  propertyName: "Wodoci\u0105gi"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &169961362
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,18 +1034,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 306897195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 520
-  mortgageCost: 260
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 2d000000dc00000094020000400600009e070000fc080000
-  set: 6
-  propertyName: Obserwatorium Astronomiczne
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &357094699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,18 +1183,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 357305475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 320
-  mortgageCost: 160
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 190000007800000068010000e80300007805000008070000
-  set: 3
-  propertyName: "Rynek Podg\xF3rski"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &368058753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,18 +1676,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 496249744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 700
-  mortgageCost: 350
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 400
-  hotelCost: 400
-  fees: 460000005e010000e803000098080000280a0000b80b0000
-  set: 8
-  propertyName: "Rynek G\u0142\xF3wny"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &510528710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,18 +1839,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 519192215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 360
-  mortgageCost: 180
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 1e0000008c000000900100004c040000dc0500006c070000
-  set: 4
-  propertyName: "Park Lotnik\xF3w"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &546743742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,18 +1957,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 546743742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 120
-  mortgageCost: 60
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 100
-  hotelCost: 100
-  fees: 0a0000002800000078000000680100008002000084030000
-  set: 1
-  propertyName: "Pa\u0142ac Jerzmanowskiego"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &606818069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,18 +2225,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 670156052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 520
-  mortgageCost: 260
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 2d000000dc00000094020000400600009e070000fc080000
-  set: 6
-  propertyName: ZOO
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &685536536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2263,18 +2343,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 685536536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 440
-  mortgageCost: 220
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 23000000b4000000f401000078050000d606000034080000
-  set: 5
-  propertyName: Biprostal
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,18 +2552,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 740205613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 800
-  mortgageCost: 400
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 400
-  hotelCost: 400
-  fees: 6400000090010000b0040000f00a0000480d0000a00f0000
-  set: 8
-  propertyName: Wawel
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &760247032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,18 +2782,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 794148358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 120
-  mortgageCost: 60
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 100
-  hotelCost: 100
-  fees: 0a0000002800000078000000680100008002000084030000
-  set: 1
-  propertyName: Szpital Uniwersytecki
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &846824634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,18 +2977,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 890720891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 400
-  mortgageCost: 200
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 23000000a0000000b8010000b004000040060000d0070000
-  set: 4
-  propertyName: "Tauron Arena Krak\xF3w"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &908982022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,7 +3076,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 495687210}
-        m_MethodName: DisablePropertyPanel
+        m_MethodName: DisablePurchasePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3185,6 +3281,7 @@ GameObject:
   - component: {fileID: 1002309248}
   - component: {fileID: 1002309247}
   - component: {fileID: 1002309246}
+  - component: {fileID: 1002309250}
   m_Layer: 0
   m_Name: 39
   m_TagString: Untagged
@@ -3265,6 +3362,31 @@ Transform:
   m_Father: {fileID: 1299968817}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1002309250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002309245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1030254394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,18 +3489,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030254394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 600
-  mortgageCost: 300
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 400
-  hotelCost: 400
-  fees: 37000000040100000c0300006c07000098080000f6090000
-  set: 7
-  propertyName: Zajezdnia Tramwajowa
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1031909434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,6 +3557,7 @@ GameObject:
   - component: {fileID: 1037259033}
   - component: {fileID: 1037259032}
   - component: {fileID: 1037259031}
+  - component: {fileID: 1037259035}
   m_Layer: 0
   m_Name: 37
   m_TagString: Untagged
@@ -3511,6 +3638,31 @@ Transform:
   m_Father: {fileID: 1299968817}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1037259035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037259030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1039683284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,18 +3765,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039683284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 400
-  mortgageCost: 200
-  isRail: 1
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
   isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 3200000064000000c800000090010000
-  set: 9
-  propertyName: "Krak\xF3w P\u0142asz\xF3w"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1040607953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3793,7 @@ GameObject:
   - component: {fileID: 1040607956}
   - component: {fileID: 1040607955}
   - component: {fileID: 1040607954}
+  - component: {fileID: 1040607958}
   m_Layer: 0
   m_Name: 21
   m_TagString: Untagged
@@ -3717,6 +3874,31 @@ Transform:
   m_Father: {fileID: 169961363}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1040607958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040607953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1042249932
 GameObject:
   m_ObjectHideFlags: 0
@@ -3854,18 +4036,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093777108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 360
-  mortgageCost: 180
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 1e0000008c000000900100004c040000dc0500006c070000
-  set: 4
-  propertyName: Akademia Wychowania Fizycznego
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1121030982
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,18 +4154,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121030982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 600
-  mortgageCost: 300
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 400
-  hotelCost: 400
-  fees: 37000000040100000c0300006c07000098080000f6090000
-  set: 7
-  propertyName: "Uniwersytet Jagiello\u0144ski"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1217927805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4082,18 +4272,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217927805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 480
-  mortgageCost: 240
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 28000000c800000058020000dc0500003a07000098080000
-  set: 5
-  propertyName: "Akademia G\xF3rniczo-Hutnicza"
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1299968816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4340,7 @@ GameObject:
   - component: {fileID: 1302687713}
   - component: {fileID: 1302687712}
   - component: {fileID: 1302687711}
+  - component: {fileID: 1302687715}
   m_Layer: 0
   m_Name: 3
   m_TagString: Untagged
@@ -4226,6 +4421,31 @@ Transform:
   m_Father: {fileID: 1031909435}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1302687715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302687710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1332613331
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,6 +4458,7 @@ GameObject:
   - component: {fileID: 1332613334}
   - component: {fileID: 1332613333}
   - component: {fileID: 1332613332}
+  - component: {fileID: 1332613336}
   m_Layer: 0
   m_Name: 31
   m_TagString: Untagged
@@ -4318,6 +4539,31 @@ Transform:
   m_Father: {fileID: 1299968817}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1332613336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332613331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1421650407
 GameObject:
   m_ObjectHideFlags: 0
@@ -4460,18 +4706,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1446535519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 280
-  mortgageCost: 140
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 14000000640000002c01000084030000b0040000dc050000
-  set: 3
-  propertyName: Fabryka Schindlera
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1450700094
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,6 +4734,7 @@ GameObject:
   - component: {fileID: 1450700097}
   - component: {fileID: 1450700096}
   - component: {fileID: 1450700095}
+  - component: {fileID: 1450700099}
   m_Layer: 0
   m_Name: 8
   m_TagString: Untagged
@@ -4564,6 +4815,31 @@ Transform:
   m_Father: {fileID: 1031909435}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1450700099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450700094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1463498395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,18 +4942,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463498395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 240
-  mortgageCost: 120
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 100
-  hotelCost: 100
-  fees: 1400000050000000c80000005802000084030000b0040000
-  set: 2
-  propertyName: Huta ArcelorMittal
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1494013143
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,6 +5043,7 @@ GameObject:
   - component: {fileID: 1542498876}
   - component: {fileID: 1542498875}
   - component: {fileID: 1542498874}
+  - component: {fileID: 1542498878}
   m_Layer: 0
   m_Name: 34
   m_TagString: Untagged
@@ -4843,6 +5124,31 @@ Transform:
   m_Father: {fileID: 1299968817}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1542498878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542498873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1549861812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4945,18 +5251,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549861812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 400
-  mortgageCost: 200
-  isRail: 1
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
   isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 3200000064000000c800000090010000
-  set: 9
-  propertyName: "Krak\xF3w G\u0142\xF3wny"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1568622447
 GameObject:
   m_ObjectHideFlags: 0
@@ -4969,6 +5279,7 @@ GameObject:
   - component: {fileID: 1568622450}
   - component: {fileID: 1568622449}
   - component: {fileID: 1568622448}
+  - component: {fileID: 1568622452}
   m_Layer: 0
   m_Name: 18
   m_TagString: Untagged
@@ -5049,6 +5360,31 @@ Transform:
   m_Father: {fileID: 1421650408}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1568622452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568622447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1599880240
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,18 +5487,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599880240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 640
-  mortgageCost: 320
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 400
-  hotelCost: 400
-  fees: 3c0000002c01000084030000d007000060090000f00a0000
-  set: 7
-  propertyName: Centrum Kongresowe ICE
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1638050698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5265,18 +5605,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1638050698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 400
-  mortgageCost: 200
-  isRail: 1
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
   isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 3200000064000000c800000090010000
-  set: 9
-  propertyName: "Krak\xF3w Bie\u017Can\xF3w"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1669307930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,18 +5723,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669307930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 560
-  mortgageCost: 280
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 32000000f0000000d0020000a40600000208000060090000
-  set: 6
-  propertyName: Willa Decjusza
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1697726613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5751,8 @@ GameObject:
   - component: {fileID: 1697726616}
   - component: {fileID: 1697726615}
   - component: {fileID: 1697726614}
+  - component: {fileID: 1697726619}
+  - component: {fileID: 1697726618}
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
@@ -5483,6 +5833,56 @@ Transform:
   m_Father: {fileID: 1031909435}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1697726618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697726613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
+--- !u!114 &1697726619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697726613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1706828352
 GameObject:
   m_ObjectHideFlags: 0
@@ -5495,6 +5895,7 @@ GameObject:
   - component: {fileID: 1706828355}
   - component: {fileID: 1706828354}
   - component: {fileID: 1706828353}
+  - component: {fileID: 1706828357}
   m_Layer: 0
   m_Name: 23
   m_TagString: Untagged
@@ -5575,6 +5976,31 @@ Transform:
   m_Father: {fileID: 169961363}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
+--- !u!114 &1706828357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706828352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1711510440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5807,18 +6233,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1793278794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 440
-  mortgageCost: 220
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 300
-  hotelCost: 300
-  fees: 23000000b4000000f401000078050000d606000034080000
-  set: 5
-  propertyName: Uniwersytet Pedagogiczny
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1842617172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,18 +6351,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1842617172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 200
-  mortgageCost: 100
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 100
-  hotelCost: 100
-  fees: 0f0000003c000000b40000001c020000200300004c040000
-  set: 2
-  propertyName: Teatr Ludowy
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1886058553
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,18 +6469,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886058553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 280
-  mortgageCost: 140
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 200
-  hotelCost: 200
-  fees: 14000000640000002c01000084030000b0040000dc050000
-  set: 3
-  propertyName: Akademia Frycza Modrzewskiego
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1891807206
 GameObject:
   m_ObjectHideFlags: 0
@@ -6330,61 +6768,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1931238782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 200
-  mortgageCost: 100
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
   isSupplies: 0
-  homeCost: 100
-  hotelCost: 100
-  fees: 0f0000003c000000b40000001c020000200300004c040000
-  set: 2
-  propertyName: Plac Centralny
---- !u!1 &1934721378
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1934721380}
-  - component: {fileID: 1934721379}
-  m_Layer: 0
-  m_Name: PropertyController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1934721379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934721378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bdb8d609b450bb48a6d6d3968df252a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1934721380
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934721378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
+  homeCost: 0
+  hotelCost: 0
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &1937534200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,18 +6959,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975337647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 300
-  mortgageCost: 150
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
   isRail: 0
-  isSupplies: 1
+  isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 0a000000
-  set: 10
-  propertyName: "Elektrociep\u0142ownia"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &2007269063
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,18 +7077,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007269063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a56ccdada473cd458d6b21aeaac3b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 400
-  mortgageCost: 200
-  isRail: 1
+  fieldNumber: 0
+  cost: 0
+  mortgageCost: 0
+  isRail: 0
   isSupplies: 0
+  isChance: 0
+  isTreasure: 0
+  isSpecial: 0
   homeCost: 0
   hotelCost: 0
-  fees: 3200000064000000c800000090010000
-  set: 9
-  propertyName: "Krak\xF3w Olsza"
+  fees: 000000000000000000000000000000000000000000000000
+  set: 0
+  propertyName: 
 --- !u!1 &2043669273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,7 +7419,7 @@ GameObject:
   - component: {fileID: 2111940175}
   - component: {fileID: 2111940174}
   m_Layer: 5
-  m_Name: PropertyOptions
+  m_Name: PurchaseOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

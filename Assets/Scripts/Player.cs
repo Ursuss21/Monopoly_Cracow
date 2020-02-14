@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private int money;
-    private List<Property> properties;
+    private List<Field> properties;
 
     private int playerNumber;
 
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     private void Start() {
         money = 3000;
-        properties = new List<Property>();
+        properties = new List<Field>();
 
         currentField = 1;
         imprisoned = false;

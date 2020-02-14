@@ -36,7 +36,7 @@ public class Pawn : MonoBehaviour
 
         currentPlayer = playerOrder[0];
 
-        UI.instance.DisablePropertyPanel();
+        UI.instance.DisablePurchasePanel();
     }
 
     private void SpawnPawns(){
@@ -107,7 +107,7 @@ public class Pawn : MonoBehaviour
 
         SetPawnPosition(player, rollValue);
         player.ChangeCurrentField(rollValue);
-        PropertyController.instance.ManageProperties(player);
+        ManageField(player);
 
         if(!diceDouble){
             ChangePlayer();
@@ -200,6 +200,12 @@ public class Pawn : MonoBehaviour
     private void SetPawnPosition(Player player, int rollValue){
         int currentField = player.GetCurrentField();
         pawns[currentPlayer].transform.position += GetNewPawnPosition(currentField, currentField + rollValue);
+    }
+
+    private void ManageField(Player player){
+        int fieldNumber = player.GetCurrentField();
+        Field field = GameObject.Find(""+fieldNumber).GetComponent<Field>();
+        field.CheckAvailability();
     }
 
     private void ChangePlayer(){

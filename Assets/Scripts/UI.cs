@@ -8,7 +8,7 @@ public class UI : MonoBehaviour
     public static UI instance { get; set; }
     
     private GameObject playerMoney;
-    private GameObject propertyPanel;
+    private GameObject purchasePanel;
 
     private string diceSpritesFolder = "Sprites/Dice";
     private Sprite[] diceFaces;
@@ -24,7 +24,7 @@ public class UI : MonoBehaviour
 
     private void Start() {
         playerMoney = GameObject.Find("PlayerMoney");
-        propertyPanel = GameObject.Find("PropertyOptions");
+        purchasePanel = GameObject.Find("PurchaseOptions");
         diceFaces = Resources.LoadAll<Sprite>(diceSpritesFolder);
     }
 
@@ -41,12 +41,12 @@ public class UI : MonoBehaviour
 
     //Property menu overlay
 
-    public void EnablePropertyPanel(){
-        propertyPanel.SetActive(true);
+    public void EnablePurchasePanel(){
+        purchasePanel.SetActive(true);
     }
 
-    public void DisablePropertyPanel(){
-        propertyPanel.SetActive(false);
+    public void DisablePurchasePanel(){
+        purchasePanel.SetActive(false);
     }
 
     public void UpdateDiceSprite(GameObject dice, int face){
