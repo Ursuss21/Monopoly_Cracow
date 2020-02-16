@@ -28,14 +28,18 @@ public class Dice : MonoBehaviour
         diceOneValue = GetDiceRollValue();
         diceTwoValue = GetDiceRollValue();
 
-        UI.instance.UpdateDiceSprite(diceOneObject, diceOneValue - 1);
-        UI.instance.UpdateDiceSprite(diceTwoObject, diceTwoValue - 1);
+        UpdateDicesSprites();
 
         if(diceOneValue == diceTwoValue){
             SetDiceDouble(true);
         }
 
-        Pawn.instance.MovePawn(diceOneValue + diceTwoValue, diceDouble);
+        InitializePlayerTurn();
+    }
+
+    private void InitializePlayerTurn(){
+        Player player = GameInfo.instance.GetPlayerObject();
+        player.StartTurn(diceOneValue + diceTwoValue, diceDouble);
     }
 
     public float GetDiceOneValue(){
@@ -52,5 +56,10 @@ public class Dice : MonoBehaviour
 
     private void SetDiceDouble(bool value){
         diceDouble = value;
+    }
+
+    private void UpdateDicesSprites(){
+        UI.instance.UpdateDiceSprite(diceOneObject, diceOneValue - 1);
+        UI.instance.UpdateDiceSprite(diceTwoObject, diceTwoValue - 1);
     }
 }

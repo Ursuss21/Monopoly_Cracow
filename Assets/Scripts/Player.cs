@@ -11,9 +11,9 @@ public class Player : MonoBehaviour
     private int playerNumber;
 
     private int currentField;
-
     private bool imprisoned;
     private int imprisonedTimer;
+    private bool diceDoubleFlag;
 
     private void Start() {
         money = 3000;
@@ -22,6 +22,27 @@ public class Player : MonoBehaviour
         currentField = 1;
         imprisoned = false;
         imprisonedTimer = 0;
+        diceDoubleFlag = false;
+    }
+
+    public void StartTurn(int rollValue, bool diceDouble){
+        if(CheckDouble(diceDouble)){
+            SendToJail();
+            return;
+        }
+
+        GetComponent<Pawn>().MovePawn(rollValue, currentField);
+        SetCurrentField(rollValue);
+        FieldManagement();
+
+        if(!diceDouble){
+            GameInfo.instance.ChangePlayer();
+        }
+        else{
+            SetDiceDoubleFlag(true);
+        }
+
+        UI.instance.UpdateAccountState();
     }
 
     public void UpdateMoney(int value){
@@ -36,7 +57,7 @@ public class Player : MonoBehaviour
         return currentField;
     }
 
-    public void ChangeCurrentField(int i){
+    public void SetCurrentField(int i){
         currentField = (currentField + i)%40;
         if(currentField == 0){
             currentField = 40;
@@ -58,5 +79,27 @@ public class Player : MonoBehaviour
 
     public int GetImprisonedTimer(){
         return imprisonedTimer;
+    }
+    
+    private bool CheckDouble(bool diceDouble){
+        if(diceDouble && diceDoubleFlag){
+            return true;
+        }
+        return false;
+    }
+
+    private void SetDiceDoubleFlag(bool value){
+        diceDoubleFlag = value;
+    }
+    
+    private void SendToJail(){
+        int rollValue = 40 - currentField + 11;
+        SetImprisoned(true);
+        GetComponent<Pawn>().SetPawnPosition(currentField, rollValue);
+    }
+
+    private void FieldManagement(){
+        Field field = GameObject.Find(""+currentField).GetComponent<Field>();
+        field.EnablePurchasePanel();
     }
 }

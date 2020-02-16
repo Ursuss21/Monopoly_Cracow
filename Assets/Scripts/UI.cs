@@ -26,17 +26,16 @@ public class UI : MonoBehaviour
         playerMoney = GameObject.Find("PlayerMoney");
         purchasePanel = GameObject.Find("PurchaseOptions");
         diceFaces = Resources.LoadAll<Sprite>(diceSpritesFolder);
+
+        DisablePurchasePanel();
     }
 
     //Upper account state bar
 
-    public void UpdateAccountStates(GameObject[] players){
-        Debug.Log(""+players[0].GetComponent<Player>().GetMoney());
-        string moneyText;
-        for(int i = 0; i < players.Length; ++i){
-            moneyText = players[i].GetComponent<Player>().GetMoney().ToString();
-            GameObject.Find("Player"+i+"MoneyText").GetComponent<Text>().text = moneyText;
-        }
+    public void UpdateAccountState(){
+        Debug.Log(""+GameInfo.instance.GetPlayerObject().GetMoney());
+        string moneyText = GameInfo.instance.GetPlayerObject().GetMoney().ToString();
+        GameObject.Find("Player"+GameInfo.instance.GetCurrentPlayer()+"MoneyText").GetComponent<Text>().text = moneyText;
     }
 
     //Property menu overlay
