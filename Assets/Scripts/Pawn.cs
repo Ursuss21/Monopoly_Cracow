@@ -99,15 +99,14 @@ public class Pawn : MonoBehaviour
         Player player = pawns[currentPlayer].GetComponent<Player>();
         int currentField = player.GetCurrentField();
 
-        if(CheckJailConditions(player, rollValue, diceDouble)){
+        if(CheckDouble(diceDouble)){
+            SendToJail(player);
             return;
         }
-        
-        SpecialFieldsControl(player, rollValue);
 
-        SetPawnPosition(player, rollValue);
+        SetPawnPosition(currentField, rollValue);
         player.ChangeCurrentField(rollValue);
-        ManageField(player);
+        FieldManagement(player);
 
         if(!diceDouble){
             ChangePlayer();
@@ -119,27 +118,7 @@ public class Pawn : MonoBehaviour
         UI.instance.UpdateAccountStates(pawns);
     }
 
-    private bool CheckJailConditions(Player player, int rollValue, bool diceDouble){
-        int currentField = player.GetCurrentField();
-
-        if(IsSecondDoubleRoll(diceDouble)){
-            SendToJail(player, "DOUBLE", rollValue);
-            SetDiceDoubleFlag(false);
-            ChangePlayer();
-            return true;
-        }
-        else{
-            SetDiceDoubleFlag(false);
-        }
-
-        if(currentField + rollValue == 31){
-            SendToJail(player, "GOTOJAIL", rollValue);
-            return true;
-        }
-        return false;
-    }
-
-    private bool IsSecondDoubleRoll(bool diceDouble){
+    private bool CheckDouble(bool diceDouble){
         if(diceDouble && diceDoubleFlag){
             return true;
         }
@@ -150,32 +129,11 @@ public class Pawn : MonoBehaviour
         diceDoubleFlag = value;
     }
 
-    private void SendToJail(Player player, string option, int rollValue){
+    private void SendToJail(Player player){
         int currentField = player.GetCurrentField();
-        switch(option){
-            case "DOUBLE":
-                if(currentField <= 11){
-                    rollValue = 11 - currentField;
-                }
-                else{
-                    rollValue = 40 - currentField + 11;
-                }
-                break;
-            case "GOTOJAIL":
-                rollValue += 20;
-                player.SetImprisoned(true);
-                break;
-        }
+        int rollValue = 40 - currentField + 11;
         player.SetImprisoned(true);
         pawns[currentPlayer].transform.position += GetNewPawnPosition(currentField, currentField + rollValue);
-    }
-
-    private void SpecialFieldsControl(Player player, int rollValue){
-        int currentField = player.GetCurrentField();
-
-        if(currentField + rollValue > 40){
-            player.UpdateMoney(400);
-        }
     }
 
     private Vector3 GetNewPawnPosition(int currentField, int nextField){
@@ -197,15 +155,14 @@ public class Pawn : MonoBehaviour
         return temp;
     }
 
-    private void SetPawnPosition(Player player, int rollValue){
-        int currentField = player.GetCurrentField();
+    private void SetPawnPosition(int currentField, int rollValue){
         pawns[currentPlayer].transform.position += GetNewPawnPosition(currentField, currentField + rollValue);
     }
 
-    private void ManageField(Player player){
-        int fieldNumber = player.GetCurrentField();
-        Field field = GameObject.Find(""+fieldNumber).GetComponent<Field>();
-        field.CheckAvailability();
+    private void FieldManagement(Player player){
+        int currentField = player.GetCurrentField();
+        Field field = GameObject.Find(""+currentField).GetComponent<Field>();
+        field.EnablePurchasePanel();
     }
 
     private void ChangePlayer(){

@@ -295,21 +295,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 61054323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: b9745561a6e459043abc0b8a8fa9f5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &129592849
 GameObject:
@@ -413,21 +402,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 129592849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: f939b7e674720224e9da6e12b77f42f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &134160958
 GameObject:
@@ -531,22 +509,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 134160958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a82425dfc3841f4c85a9a07c2999e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
 --- !u!1 &169961362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,22 +1004,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 306897195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &357094699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,22 +1148,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 357305475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &368058753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,22 +1636,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 496249744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &510528710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,22 +1794,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 519192215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &546743742
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,22 +1907,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 546743742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &606818069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,22 +2170,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 670156052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &685536536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,22 +2283,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 685536536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,22 +2487,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 740205613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &760247032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,22 +2712,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 794148358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &846824634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,22 +2902,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 890720891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &908982022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3371,21 +3291,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1002309245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: b9745561a6e459043abc0b8a8fa9f5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1030254394
 GameObject:
@@ -3489,22 +3398,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030254394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1031909434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,21 +3551,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1037259030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cbc8059086f8674cb4b0d6872469a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1039683284
 GameObject:
@@ -3765,22 +3658,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039683284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fc7b291954355648bac4e086954d434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
+  fees: 00000000000000000000000000000000
 --- !u!1 &1040607953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3883,21 +3769,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1040607953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: f939b7e674720224e9da6e12b77f42f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1042249932
 GameObject:
@@ -4036,22 +3911,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093777108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1121030982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4154,22 +4024,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121030982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1217927805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,22 +4137,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217927805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1299968816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,21 +4290,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1302687710}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: c06008fe186c2b3418892991ad4b9f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1332613331
 GameObject:
@@ -4548,21 +4397,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1332613331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: f939b7e674720224e9da6e12b77f42f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1421650407
 GameObject:
@@ -4706,22 +4544,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1446535519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1450700094
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,21 +4657,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450700094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cbc8059086f8674cb4b0d6872469a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1463498395
 GameObject:
@@ -4942,22 +4764,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463498395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1494013143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5133,21 +4950,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542498873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: c06008fe186c2b3418892991ad4b9f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1549861812
 GameObject:
@@ -5251,22 +5057,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549861812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fc7b291954355648bac4e086954d434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
+  fees: 00000000000000000000000000000000
 --- !u!1 &1568622447
 GameObject:
   m_ObjectHideFlags: 0
@@ -5369,21 +5168,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568622447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: c06008fe186c2b3418892991ad4b9f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1599880240
 GameObject:
@@ -5487,22 +5275,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599880240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1638050698
 GameObject:
   m_ObjectHideFlags: 0
@@ -5605,22 +5388,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1638050698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fc7b291954355648bac4e086954d434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
+  fees: 00000000000000000000000000000000
 --- !u!1 &1669307930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,22 +5499,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669307930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1697726613
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,7 +5522,6 @@ GameObject:
   - component: {fileID: 1697726616}
   - component: {fileID: 1697726615}
   - component: {fileID: 1697726614}
-  - component: {fileID: 1697726619}
   - component: {fileID: 1697726618}
   m_Layer: 0
   m_Name: 1
@@ -5842,46 +5612,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697726613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e8b0b7aba2df41438fafac24666f459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
---- !u!114 &1697726619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697726613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1706828352
 GameObject:
@@ -5985,21 +5719,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1706828352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 1cbc8059086f8674cb4b0d6872469a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
-  cost: 0
-  mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
-  set: 0
   propertyName: 
 --- !u!1 &1711510440
 GameObject:
@@ -6233,22 +5956,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1793278794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1842617172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6351,22 +6069,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1842617172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1886058553
 GameObject:
   m_ObjectHideFlags: 0
@@ -6469,22 +6182,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886058553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1891807206
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,22 +6476,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1931238782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 92f02929025407f47b1c6f6a8fc9c39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
+  set: 0
   homeCost: 0
   hotelCost: 0
   fees: 000000000000000000000000000000000000000000000000
-  set: 0
-  propertyName: 
 --- !u!1 &1937534200
 GameObject:
   m_ObjectHideFlags: 0
@@ -6959,22 +6662,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1975337647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a82425dfc3841f4c85a9a07c2999e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
 --- !u!1 &2007269063
 GameObject:
   m_ObjectHideFlags: 0
@@ -7077,22 +6772,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007269063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a0eaf5fffcacc4e90c1b71f55b1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fc7b291954355648bac4e086954d434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldNumber: 0
+  propertyName: 
   cost: 0
   mortgageCost: 0
-  isRail: 0
-  isSupplies: 0
-  isChance: 0
-  isTreasure: 0
-  isSpecial: 0
-  homeCost: 0
-  hotelCost: 0
-  fees: 000000000000000000000000000000000000000000000000
   set: 0
-  propertyName: 
+  fees: 00000000000000000000000000000000
 --- !u!1 &2043669273
 GameObject:
   m_ObjectHideFlags: 0
