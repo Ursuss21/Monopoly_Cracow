@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class SpecialField : Field
 {
-
+    override protected void Start() {
+        SetOwner(-2);
+    }
 }

@@ -18,4 +18,8 @@ public class PropertyField : PurchasableField
         buildings = 0;
         SetOwner(-1);
     }
+
+    override public int GetFee(){
+        return fees[buildings];
+    }
 }

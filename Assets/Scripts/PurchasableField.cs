@@ -14,23 +14,23 @@ public class PurchasableField : Field
     [SerializeField]
     protected string propertyName;
 
-    protected int owner;
-
     override protected void Start() {
-        
-    }
 
-    public int GetOwner(){
-        return owner;
-    }
-
-    public void SetOwner(int newOwner){
-        owner = newOwner;
     }
 
     override public void EnablePurchasePanel(){
         if(owner == -1){
+            UI.instance.DisableDiceButton();
+            UI.instance.EnableEndTurnButton();
             UI.instance.EnablePurchasePanel();
         }
+    }
+
+    override public int GetCost(){
+        return cost;
+    }
+
+    override public int GetFee(){
+        return 0;
     }
 }

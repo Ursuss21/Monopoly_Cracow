@@ -39,6 +39,7 @@ public class Dice : MonoBehaviour
 
     private void InitializePlayerTurn(){
         Player player = GameInfo.instance.GetPlayerObject();
+        GameInfo.instance.SetLastRoll(diceOneValue+diceTwoValue);
         player.StartTurn(diceOneValue + diceTwoValue, diceDouble);
     }
 

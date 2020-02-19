@@ -10,6 +10,8 @@ public class GameInfo : MonoBehaviour
     private int[] playerOrder;
     private int currentPlayer;
 
+    private int lastRoll;
+
     public static GameInfo instance { get; set; }
 
     private void Awake() {
@@ -52,6 +54,10 @@ public class GameInfo : MonoBehaviour
         return pawns[currentPlayer].GetComponent<Player>();
     }
 
+    public Player GetOtherPlayerObject(int otherNumber){
+        return pawns[otherNumber].GetComponent<Player>();
+    }
+
     public int GetPawnCount(){
         return pawnCount;
     }
@@ -61,5 +67,13 @@ public class GameInfo : MonoBehaviour
         if(currentPlayer == pawnCount){
             currentPlayer = 0;
         }
+    }
+
+    public void SetLastRoll(int roll){
+        lastRoll = roll;
+    }
+
+    public int GetLastRoll(){
+        return lastRoll;
     }
 }

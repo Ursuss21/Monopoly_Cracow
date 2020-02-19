@@ -41,7 +41,6 @@ public class ObjectSpawner : MonoBehaviour
             }
             GameInfo.instance.AddPawn(Instantiate(pawnPrefab, spawnPoint, Quaternion.identity), i);
             SetPawnProperties(i);
-            GameInfo.instance.GetPawn(i).AddComponent<Pawn>();
         }
     }
     
