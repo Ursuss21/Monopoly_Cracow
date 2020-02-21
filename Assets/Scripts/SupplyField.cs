@@ -12,6 +12,6 @@ public class SupplyField : PurchasableField
     }
 
     override public int GetFee(){
-        return baseCost * GameInfo.instance.GetLastRoll() * GameInfo.instance.GetPlayerObject().GetSuppliesCount();
+        return baseCost * GameInfo.instance.GetLastRoll() * GameInfo.instance.GetPlayerObject(GetOwner()).GetSuppliesCount();
     }
 }

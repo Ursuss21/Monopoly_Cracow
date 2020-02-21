@@ -36,9 +36,11 @@ public class UI : MonoBehaviour
     }
 
     public void UpdateAccountState(){
-        Debug.Log(""+GameInfo.instance.GetPlayerObject().GetMoney());
-        string moneyText = GameInfo.instance.GetPlayerObject().GetMoney().ToString();
-        GameObject.Find("Player"+GameInfo.instance.GetCurrentPlayer()+"MoneyText").GetComponent<Text>().text = moneyText;
+        string moneyText;
+        for(int i = 0; i < GameInfo.instance.GetPawnCount(); ++i){
+            moneyText = GameInfo.instance.GetPlayerObject(i).GetMoney().ToString();
+            GameObject.Find("Player"+i+"MoneyText").GetComponent<Text>().text = moneyText;
+        }
     }
 
     public void EnablePurchasePanel(){
@@ -70,13 +72,13 @@ public class UI : MonoBehaviour
     }
 
     public void BuyProperty(){
-        GameInfo.instance.GetPlayerObject().AddProperty();
+        GameInfo.instance.GetCurrentPlayerObject().AddProperty();
         DisablePurchasePanel();
         UpdateAccountState();
     }
 
     public void EndTurn(){
-        GameInfo.instance.GetPlayerObject().EndTurn();
+        GameInfo.instance.GetCurrentPlayerObject().EndTurn();
         EnableDiceButton();
         DisableEndTurnButton();
     }

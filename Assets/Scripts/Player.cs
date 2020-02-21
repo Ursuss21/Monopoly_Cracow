@@ -32,12 +32,14 @@ public class Player : MonoBehaviour
         }
 
         GetComponent<Pawn>().MovePawn(rollValue, currentField);
-        SetCurrentField(rollValue);
+        UpdateCurrentField(rollValue);
 
         if(diceDouble){
+            Debug.Log("dice double "+GetDiceDoubleFlag() + " player " +playerNumber);
             SetDiceDoubleFlag(true);
         }
         else{
+            SetDiceDoubleFlag(false);
             FieldManagement();
         }
 
@@ -48,7 +50,6 @@ public class Player : MonoBehaviour
     }
 
     public void UpdateMoney(int value){
-        Debug.Log(value+"");
         money += value;
     }
 
@@ -61,10 +62,18 @@ public class Player : MonoBehaviour
     }
 
     public void SetCurrentField(int i){
+        currentField = i;
+    }
+
+    public void UpdateCurrentField(int i){
         currentField = (currentField + i)%40;
         if(currentField == 0){
             currentField = 40;
         }
+    }
+
+    public void SetPlayerNumber(int i){
+        playerNumber = i;
     }
 
     public void SetImprisoned(bool prison){
@@ -100,9 +109,10 @@ public class Player : MonoBehaviour
     }
     
     private void SendToJail(){
-        int rollValue = 40 - currentField + 11;
         SetImprisoned(true);
-        GetComponent<Pawn>().SetPawnPosition(currentField, rollValue);
+        SetDiceDoubleFlag(false);
+        SetCurrentField(11);
+        GetComponent<Pawn>().SetPrisonPosition();
         GameInfo.instance.ChangePlayer();
     }
 
@@ -121,7 +131,6 @@ public class Player : MonoBehaviour
 
     public void AddProperty(){
         GameObject field = GameObject.Find(""+currentField);
-        Debug.Log(GameInfo.instance.GetCurrentPlayer()+" number");
         properties.Add(field);
         field.GetComponent<Field>().SetOwner(GameInfo.instance.GetCurrentPlayer());
         UpdateMoney(-field.GetComponent<Field>().GetCost());
@@ -135,8 +144,11 @@ public class Player : MonoBehaviour
 
         int fee = field.GetFee();
         UpdateMoney(-fee);
-        Player other = GameInfo.instance.GetOtherPlayerObject(field.GetOwner());
-        other.UpdateMoney(fee);
+        
+        int otherIndex = field.GetOwner();
+        GameObject other = GameInfo.instance.GetPawn(otherIndex);
+        other.GetComponent<Player>().UpdateMoney(fee);
+        GameInfo.instance.SetPawn(other, otherIndex);
         
         UI.instance.UpdateAccountState();
         Debug.Log("owner " + field.GetOwner() + " fee " + fee);
@@ -150,7 +162,7 @@ public class Player : MonoBehaviour
     public int GetRailsCount(){
         int count = 0;
         foreach(GameObject g in properties){
-            if(g.GetComponent<RailField>()){
+            if(g.GetComponent<RailField>() != null){
                 ++count;
             }
         }
@@ -160,7 +172,7 @@ public class Player : MonoBehaviour
     public int GetSuppliesCount(){
         int count = 0;
         foreach(GameObject g in properties){
-            if(g.GetComponent<SupplyField>()){
+            if(g.GetComponent<SupplyField>() != null){
                 ++count;
             }
         }

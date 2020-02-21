@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pawn : MonoBehaviour
 {
     public void MovePawn(int rollValue, int currentField){
-        SetPawnPosition(currentField, rollValue);
+        SetPawnPosition(rollValue, currentField);
     }
 
     public Vector3 GetNewPawnPosition(int currentField, int nextField){
@@ -27,8 +27,28 @@ public class Pawn : MonoBehaviour
         return position;
     }
 
-    public void SetPawnPosition(int currentField, int rollValue){
+    public void SetPawnPosition(int rollValue, int currentField){
         int currentPlayer = GameInfo.instance.GetCurrentPlayer();
         GameInfo.instance.GetPawn(currentPlayer).transform.position += GetNewPawnPosition(currentField, currentField + rollValue);
+    }
+
+    public void SetPrisonPosition(){
+        int currentPlayer = GameInfo.instance.GetCurrentPlayer();
+        Vector3 position = new Vector3(0, 0, 0);
+        switch(currentPlayer){
+            case 0:
+                position = new Vector3(0.5f, 0, 31.5f);
+                break;
+            case 1:
+                position = new Vector3(-0.5f, 0, 31.5f);
+                break;
+            case 2:
+                position = new Vector3(0.5f, 0, 30.5f);
+                break;
+            case 3:
+                position = new Vector3(-0.5f, 0, 30.5f);
+                break;
+        }
+        GameInfo.instance.GetPawn(currentPlayer).transform.position = position;
     }
 }

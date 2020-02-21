@@ -12,6 +12,6 @@ public class RailField : PurchasableField
     }
 
     override public int GetFee(){
-        return fees[GameInfo.instance.GetPlayerObject().GetRailsCount()];
+        return fees[GameInfo.instance.GetPlayerObject(GetOwner()).GetRailsCount() - 1];
     }
 }

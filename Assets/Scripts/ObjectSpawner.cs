@@ -39,7 +39,7 @@ public class ObjectSpawner : MonoBehaviour
                     spawnPoint = new Vector3(0.5f, 0, -0.5f);
                     break;
             }
-            GameInfo.instance.AddPawn(Instantiate(pawnPrefab, spawnPoint, Quaternion.identity), i);
+            GameInfo.instance.SetPawn(Instantiate(pawnPrefab, spawnPoint, Quaternion.identity), i);
             SetPawnProperties(i);
         }
     }
@@ -48,6 +48,7 @@ public class ObjectSpawner : MonoBehaviour
         SetPawnName(i);
         SetPawnColor(GameInfo.instance.GetPawn(i), i);
         SetPlayerOrder(i);
+        SetPlayerNumber(i);
     }
 
     private void SetPawnName(int i){
@@ -76,5 +77,9 @@ public class ObjectSpawner : MonoBehaviour
 
     private void SetPlayerOrder(int i){
         GameInfo.instance.SetPlayerOrder(i);
+    }
+
+    private void SetPlayerNumber(int i){
+        GameInfo.instance.GetPawn(i).GetComponent<Player>().SetPlayerNumber(i);
     }
 }

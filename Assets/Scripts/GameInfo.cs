@@ -34,7 +34,7 @@ public class GameInfo : MonoBehaviour
         return pawns[index];
     }
 
-    public void AddPawn(GameObject pawn, int index){
+    public void SetPawn(GameObject pawn, int index){
         pawns[index] = pawn;
     }
 
@@ -50,11 +50,11 @@ public class GameInfo : MonoBehaviour
         playerOrder[index] = index;
     }
 
-    public Player GetPlayerObject(){
+    public Player GetCurrentPlayerObject(){
         return pawns[currentPlayer].GetComponent<Player>();
     }
 
-    public Player GetOtherPlayerObject(int otherNumber){
+    public Player GetPlayerObject(int otherNumber){
         return pawns[otherNumber].GetComponent<Player>();
     }
 
