@@ -31,8 +31,8 @@ public class UI : MonoBehaviour
         diceButton = GameObject.Find("DiceButton");
         diceFaces = Resources.LoadAll<Sprite>(diceSpritesFolder);
 
-        DisablePurchasePanel();
-        DisableEndTurnButton();
+        HidePurchasePanel();
+        HideEndTurnButton();
     }
 
     public void UpdateAccountState(){
@@ -43,28 +43,28 @@ public class UI : MonoBehaviour
         }
     }
 
-    public void EnablePurchasePanel(){
+    public void ShowPurchasePanel(){
         purchasePanel.SetActive(true);
     }
 
-    public void DisablePurchasePanel(){
+    public void HidePurchasePanel(){
         purchasePanel.SetActive(false);
     }
 
-    public void EnableEndTurnButton(){
+    public void ShowEndTurnButton(){
         endTurnButton.SetActive(true);
     }
 
-    public void DisableEndTurnButton(){
+    public void HideEndTurnButton(){
         endTurnButton.SetActive(false);
-    }
-
-    public void EnableDiceButton(){
-        diceButton.SetActive(true);
     }
     
     public void DisableDiceButton(){
-        diceButton.SetActive(false);
+        diceButton.GetComponent<Button>().interactable = false;
+    }
+
+    public void EnableDiceButton(){
+        diceButton.GetComponent<Button>().interactable = true;
     }
 
     public void UpdateDiceSprite(GameObject dice, int face){
@@ -73,13 +73,13 @@ public class UI : MonoBehaviour
 
     public void BuyProperty(){
         GameInfo.instance.GetCurrentPlayerObject().AddProperty();
-        DisablePurchasePanel();
+        HidePurchasePanel();
         UpdateAccountState();
     }
 
     public void EndTurn(){
-        GameInfo.instance.GetCurrentPlayerObject().EndTurn();
+        Turn.instance.EndTurn();
         EnableDiceButton();
-        DisableEndTurnButton();
+        HideEndTurnButton();
     }
 }

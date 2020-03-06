@@ -21,8 +21,8 @@ public class PurchasableField : Field
     override public void EnablePurchasePanel(){
         if(owner == -1){
             UI.instance.DisableDiceButton();
-            UI.instance.EnableEndTurnButton();
-            UI.instance.EnablePurchasePanel();
+            UI.instance.ShowEndTurnButton();
+            UI.instance.ShowPurchasePanel();
         }
     }
 

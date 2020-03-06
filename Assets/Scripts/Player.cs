@@ -24,56 +24,19 @@ public class Player : MonoBehaviour
         imprisonedTimer = 0;
         diceDoubleFlag = false;
     }
-
-    public void StartTurn(int rollValue, bool diceDouble){
-        if(CheckDouble(diceDouble)){
-            SendToJail();
-            return;
-        }
-
-        GetComponent<Pawn>().MovePawn(rollValue, currentField);
-        UpdateCurrentField(rollValue);
-
-        if(diceDouble){
-            Debug.Log("dice double "+GetDiceDoubleFlag() + " player " +playerNumber);
-            SetDiceDoubleFlag(true);
-        }
-        else{
-            SetDiceDoubleFlag(false);
-            FieldManagement();
-        }
-
-    }
     
-    public void EndTurn(){
-        GameInfo.instance.ChangePlayer();
+    public void SendToJail(){
+        SetImprisoned(true);
+        SetImprisonedTimer(2);
+        SetDiceDoubleFlag(false);
+        SetCurrentField(11);
+        GetComponent<Pawn>().SetPrisonPosition();
+        Turn.instance.EndTurn();
     }
 
-    public void UpdateMoney(int value){
-        money += value;
-    }
-
-    public int GetMoney(){
-        return money;
-    }
-
-    public int GetCurrentField(){
-        return currentField;
-    }
-
-    public void SetCurrentField(int i){
-        currentField = i;
-    }
-
-    public void UpdateCurrentField(int i){
-        currentField = (currentField + i)%40;
-        if(currentField == 0){
-            currentField = 40;
-        }
-    }
-
-    public void SetPlayerNumber(int i){
-        playerNumber = i;
+    public void GetOutOfJail(){
+        SetImprisonedTimer(0);
+        SetImprisoned(false);
     }
 
     public void SetImprisoned(bool prison){
@@ -92,9 +55,9 @@ public class Player : MonoBehaviour
     public int GetImprisonedTimer(){
         return imprisonedTimer;
     }
-    
-    private bool CheckDouble(bool diceDouble){
-        if(diceDouble && diceDoubleFlag){
+
+    public bool CheckDouble(){
+        if(Dice.instance.GetDiceDouble() && GetDiceDoubleFlag()){
             return true;
         }
         return false;
@@ -104,19 +67,42 @@ public class Player : MonoBehaviour
         return diceDoubleFlag;
     }
 
-    private void SetDiceDoubleFlag(bool value){
+    public void SetDiceDoubleFlag(bool value){
         diceDoubleFlag = value;
     }
-    
-    private void SendToJail(){
-        SetImprisoned(true);
-        SetDiceDoubleFlag(false);
-        SetCurrentField(11);
-        GetComponent<Pawn>().SetPrisonPosition();
-        GameInfo.instance.ChangePlayer();
+
+    public int GetMoney(){
+        return money;
     }
 
-    private void FieldManagement(){
+    public void UpdateMoney(int value){
+        money += value;
+    }
+
+    public int GetCurrentField(){
+        return currentField;
+    }
+
+    public void SetCurrentField(int i){
+        currentField = i;
+    }
+
+    public void UpdateCurrentField(int i){
+        currentField = (currentField + i)%40;
+        if(currentField == 0){
+            currentField = 40;
+        }
+    }
+
+    public int GetPlayerNumber(){
+        return playerNumber;
+    }
+
+    public void SetPlayerNumber(int i){
+        playerNumber = i;
+    }
+    
+    public void FieldManagement(){
         Field field = GameObject.Find(""+currentField).GetComponent<Field>();
         if(field.GetOwner() == -1){
             field.EnablePurchasePanel();
@@ -136,9 +122,9 @@ public class Player : MonoBehaviour
         UpdateMoney(-field.GetComponent<Field>().GetCost());
     }
 
-    private void PayFee(){
+    public void PayFee(){
         UI.instance.DisableDiceButton();
-        UI.instance.EnableEndTurnButton();
+        UI.instance.ShowEndTurnButton();
 
         Field field = GameObject.Find(""+currentField).GetComponent<Field>();
 
@@ -154,9 +140,9 @@ public class Player : MonoBehaviour
         Debug.Log("owner " + field.GetOwner() + " fee " + fee);
     }
 
-    private void ManageSpecial(){
+    public void ManageSpecial(){
         UI.instance.DisableDiceButton();
-        UI.instance.EnableEndTurnButton();
+        UI.instance.ShowEndTurnButton();
     }
 
     public int GetRailsCount(){

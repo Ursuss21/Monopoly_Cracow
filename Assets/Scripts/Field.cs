@@ -23,7 +23,7 @@ public class Field : MonoBehaviour
 
     virtual public void EnablePurchasePanel(){
         UI.instance.DisableDiceButton();
-        UI.instance.EnableEndTurnButton();
+        UI.instance.ShowEndTurnButton();
     }
 
     virtual public int GetCost(){

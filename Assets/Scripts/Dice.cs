@@ -13,6 +13,17 @@ public class Dice : MonoBehaviour
 
     bool diceDouble;
 
+    public static Dice instance { get; set; }
+
+    private void Awake() {
+        if (instance == null){
+            instance = this;
+        }
+        else{
+            Destroy(gameObject);
+        }
+    }
+    
     private void Start() {
         diceOneObject = GameObject.Find("DiceOne");
         diceTwoObject = GameObject.Find("DiceTwo");
@@ -40,7 +51,7 @@ public class Dice : MonoBehaviour
     private void InitializePlayerTurn(){
         Player player = GameInfo.instance.GetCurrentPlayerObject();
         GameInfo.instance.SetLastRoll(diceOneValue+diceTwoValue);
-        player.StartTurn(diceOneValue + diceTwoValue, diceDouble);
+        Turn.instance.InitializeTurn(player, diceOneValue + diceTwoValue);
     }
 
     public float GetDiceOneValue(){
@@ -51,7 +62,7 @@ public class Dice : MonoBehaviour
         return diceTwoValue;
     }
 
-    private bool GetDiceDouble(){
+    public bool GetDiceDouble(){
         return diceDouble;
     }
 
