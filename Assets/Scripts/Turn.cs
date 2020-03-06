@@ -24,7 +24,7 @@ public class Turn : MonoBehaviour
 
     public void StartTurn(int rollValue){
         if(player.GetImprisoned()){
-            PrisonTurn();
+            PrisonTurn(rollValue);
         }
         else{
             NormalTurn(rollValue);
@@ -32,10 +32,10 @@ public class Turn : MonoBehaviour
         Debug.Log("imprisoned "+player.GetImprisoned());
     }
 
-    public void PrisonTurn(){
+    public void PrisonTurn(int rollValue){
         if(player.GetImprisonedTimer() == 0 || Dice.instance.GetDiceDouble()){
             player.GetOutOfJail();
-            NormalTurn();
+            NormalTurn(rollValue);
         }
         else{
             player.SetImprisonedTimer(player.GetImprisonedTimer() - 1);
